@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">JournalApp</string>
+    <string name="title">My Journal</string>
+    <string name="status">How Are You Doing Today</string>
+    <string name="getstarted">Get Started</string>
+    <string name="signup">Sign Up</string>
+</resources>

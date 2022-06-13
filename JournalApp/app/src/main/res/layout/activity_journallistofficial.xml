@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".journallistofficial">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarofficial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffaf7b"
+        android:backgroundTint="@color/blue"
+        android:textAlignment="center"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshofficial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="53dp"
+        android:layout_alignParentBottom="true">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/journallistofficial"
+            android:background="@color/deepgrey"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-5dp"
+            android:padding="5sp" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/nojournalofficial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarofficial"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="98dp"
+        android:visibility="invisible"
+        android:textColor="@color/darkblack"
+        android:layout_marginTop="293dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="323dp"
+        android:text="No Journal"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addofficial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/progress_listofficial"
+        style="@style/SpinKitView.Circle"
+        android:visibility="gone"
+        app:SpinKit_Color="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        >
+
+    </com.github.ybq.android.spinkit.SpinKitView>
+</RelativeLayout>

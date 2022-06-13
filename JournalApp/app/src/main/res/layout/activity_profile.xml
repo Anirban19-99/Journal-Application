@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+   android:fillViewport="true"
+    android:layout_height="wrap_content"
+    tools:context=".Profile">
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@color/black"
+     android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:elevation="20dp"
+        android:background="@drawable/gradientprofile"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="20dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilephoto"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/usernamelogo2"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/white"
+               >
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="1706271"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_gravity="center">
+            </TextView>
+            <TextView
+                android:id="@+id/mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1706271@kiit.ac.in"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:backgroundTint="@color/black"
+    android:padding="10dp"
+    android:layout_marginTop="20dp"
+    android:elevation="20dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="DASHBOARD"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold">
+    </TextView>
+</androidx.cardview.widget.CardView>
+     <ImageView
+         android:layout_gravity="center"
+         android:layout_marginTop="32dp"
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+         android:id="@+id/add"
+         android:visibility="gone"
+         android:src="@drawable/add">
+     </ImageView>
+     <com.github.ybq.android.spinkit.SpinKitView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         style="@style/SpinKitView.Circle"
+         app:SpinKit_Color="@color/colorPrimaryDark"
+         android:visibility="gone"
+         android:id="@+id/progressbar">
+     </com.github.ybq.android.spinkit.SpinKitView>
+
+
+     <androidx.recyclerview.widget.RecyclerView
+         android:id="@+id/recyclerview"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:minHeight="420dp">
+     </androidx.recyclerview.widget.RecyclerView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:elevation="10dp"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginBottom="15dp"
+            >
+            <Button
+                android:id="@+id/signout"
+              android:background="@drawable/ripple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:text="Sign Out"
+                android:textSize="16dp">
+            </Button>
+        </androidx.cardview.widget.CardView>
+
+
+ </LinearLayout>
+
+</ScrollView>

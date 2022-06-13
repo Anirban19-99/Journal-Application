@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Addjournalofficial">
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/progress_addofficial"
+        app:SpinKit_Color="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_height="wrap_content"
+        style="@style/SpinKitView.DoubleBounce"
+        android:layout_gravity="center_vertical">
+    </com.github.ybq.android.spinkit.SpinKitView>
+
+
+
+
+    <ScrollView
+        android:id="@+id/scrollofficial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/backofficial"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:rotation="270"
+                    android:background="@drawable/onlyripple"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.049"
+                    app:srcCompat="@drawable/lessthanlogo" />
+
+                <Button
+                    android:id="@+id/save_addofficial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="210dp"
+                    android:background="@drawable/ripplesignup"
+                    android:elevation="0dp"
+                    android:text="POST"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.94"
+                    app:layout_constraintStart_toEndOf="@+id/textViewofficial"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.053" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/lay1official"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="32sp"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal"
+                android:padding="2dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile"
+                    android:layout_width="30dp"
+                    android:layout_gravity="center"
+                    android:layout_height="30dp"
+                    android:background="@drawable/accountlogo">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+                    android:id="@+id/username_addofficial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center_horizontal"
+                    android:text="Official"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/darkblack"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/coverimage_addofficial"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.003"
+                    app:layout_constraintStart_toStartOf="@+id/coverimage_addofficial"
+                    app:layout_constraintTop_toTopOf="@+id/coverimage_addofficial"
+                    app:layout_constraintVertical_bias="0.851" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/title_addofficial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/roundborder3"
+                android:backgroundTint="@color/grey"
+                android:elevation="10dp"
+                android:ems="10"
+                android:hint="Title Official "
+                android:minHeight="60dp"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+            <EditText
+                android:id="@+id/thoughts_addofficial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/roundborder2"
+                android:backgroundTint="@color/grey"
+                android:elevation="10dp"
+                android:hint="Your Thoughts..."
+                android:inputType="textMultiLine"
+                android:minHeight="300dp"
+                android:padding="2dp"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_addofficial"
+                app:layout_constraintVertical_bias="0.049">
+
+
+            </EditText>
+
+
+
+
+
+                <TextView
+                    android:id="@+id/pdf_addofficial"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:minWidth="90dp"
+                    android:padding="20dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginTop="32dp"
+                    android:maxHeight="60dp"
+                    android:gravity="center"
+                    android:minHeight="30dp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundborder5"
+                    android:backgroundTint="@color/grey"
+                    android:elevation="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/coverimage_addofficial"
+                    app:layout_constraintEnd_toEndOf="@+id/coverimage_addofficial"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="@+id/coverimage_addofficial"
+
+                    android:text="Select PDF File" />
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

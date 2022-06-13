@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+
+
+        <!-- Base application theme. -->
+        <style name="Dialogue" parent="Theme.AppCompat.Light.Dialog.Alert">
+
+            <item name="colorPrimary">@color/colorPrimaryDark</item>
+
+            <item name="colorAccent">@color/colorPrimaryDark</item>
+
+        </style>
+
+
+
+</resources>
